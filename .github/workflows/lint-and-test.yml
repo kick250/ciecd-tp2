@@ -21,7 +21,7 @@ on:
 jobs:
   lint:
     if: ${{ inputs.run_lint == true }}
-    uses: ./.github/workflows/lint.yml
+    uses: ./.github/workflows/lint.ym
   test:
     if: ${{ inputs.run_tests == true }}
     uses: ./.github/workflows/test.yml
