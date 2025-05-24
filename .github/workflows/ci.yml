@@ -44,9 +44,8 @@ jobs:
     uses: ./.github/workflows/lint-and-test.yml
     needs: build
     with:
-      run_lint: ${{ inputs.run_lint }}
-      run_tests: ${{ inputs.run_tests }}
-
+      run_lint: ${{ github.event_name != 'workflow_dispatch' || inputs.run_lint }}
+      run_tests: ${{ github.event_name != 'workflow_dispatch' || inputs.run_tests }}
 
   package:
     runs-on: ubuntu-latest
