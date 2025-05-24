@@ -1,3 +1,5 @@
+[![CI](https://github.com/kick250/ciecd-tp2/actions/workflows/ci.yml/badge.svg)](https://github.com/kick250/ciecd-tp2/actions/workflows/ci.yml)
+
 # Projeto de CI/CD com Spring Boot
 
 ## Tecnologias e Ferramentas
