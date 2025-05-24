@@ -17,5 +17,5 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: tests
+      - name: lint
         run: ./mvnw checkstyle:check
